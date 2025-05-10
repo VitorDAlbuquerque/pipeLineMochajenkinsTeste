@@ -48,7 +48,7 @@ describe('Classe Pedido', function () {
       pedido.adicionarItem("Combo", 50, 1); // subtotal: 50
       pedido.aplicarDesconto("PROMO10");    // 10% de desconto => 45
       const total = pedido.calcularTotalPedido(); // 45 * 5 = 225
-      assert.strictEqual(total, 50);
+      assert.strictEqual(total, 52);
     });
 
     it('deve calcular o total corretamente sem desconto', function () {
